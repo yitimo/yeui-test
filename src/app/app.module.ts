@@ -1,6 +1,6 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
-import { NgModule } from '@angular/core';
+import { NgModule, NO_ERRORS_SCHEMA } from '@angular/core';
 import { HttpClientModule } from '@angular/common/http';
 
 import { YINModule, YupModule, yeuiThemeConfig } from 'yeui';
@@ -17,9 +17,11 @@ yeuiThemeConfig('weui');
     BrowserModule,
     BrowserAnimationsModule,
     HttpClientModule,
-    YupModule
+    YupModule,
+    YINModule
   ],
   providers: [],
-  bootstrap: [AppComponent]
+  bootstrap: [AppComponent],
+  schemas: []
 })
 export class AppModule { }
