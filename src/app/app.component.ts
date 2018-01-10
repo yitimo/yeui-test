@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { Yup } from 'yeui';
 
 @Component({
   selector: 'app-root',
@@ -7,4 +8,10 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'app';
+  constructor(
+    private yup: Yup
+  ) {}
+  public test() {
+    this.yup.alert({body: '你好啊'});
+  }
 }
