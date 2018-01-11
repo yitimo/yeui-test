@@ -6,19 +6,27 @@ import { HttpClientModule } from '@angular/common/http';
 import { YINModule, YupModule, yeuiThemeConfig } from 'yeui';
 
 import { AppComponent } from './app.component';
+import { ButtonComponent } from './pages/button/button.component';
+import { InputComponent } from './pages/input/input.component';
+import { HomeComponent } from './pages/home/home.component';
+import { AppRoutingModule } from './app.route';
 // config the theme
 yeuiThemeConfig('weui');
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    ButtonComponent,
+    InputComponent,
+    HomeComponent
   ],
   imports: [
     BrowserModule,
     BrowserAnimationsModule,
     HttpClientModule,
     YupModule,
-    YINModule
+    YINModule,
+    AppRoutingModule
   ],
   providers: [],
   bootstrap: [AppComponent],
