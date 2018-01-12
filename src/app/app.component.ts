@@ -7,12 +7,4 @@ import { Yup } from 'yeui';
   styleUrls: ['./app.component.css'],
   encapsulation: ViewEncapsulation.None
 })
-export class AppComponent {
-  title = 'app';
-  constructor(
-    private yup: Yup
-  ) {}
-  public test() {
-    this.yup.alert({body: '你好啊'});
-  }
-}
+export class AppComponent {}
