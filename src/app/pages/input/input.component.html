@@ -1,4 +1,4 @@
-<div ye-cells class="weui-cells_checkbox">
+<div ye-cells>
     <div cell>
         <div head>
             <label class="weui-label">qq</label>
@@ -48,10 +48,11 @@
 </div>
 
 <div ye-checkbox>
-    <label ye-option [(ngModel)]="checkboxTest1" (change)="changed($event)">???</label>
-    <label ye-option [(ngModel)]="checkboxTest2" (change)="changed($event)">??1!!</label>
+    <label ye-checkbox-option [(ngModel)]="checkboxTest1" (change)="changed($event)">???</label>
+    <label ye-checkbox-option [(ngModel)]="checkboxTest2" (change)="changed($event)">??1!!</label>
 </div>
 
-<div ye-radio [(ngModel)]="chosen" (change)="chosenChanged($event)">
-    <label ye-option *ngFor="let item of list" [value]="item.id">{{item.name}}</label>
+<div ye-radio [(ngModel)]="testttt" (change)="chosenChanged($event)">
+    <label ye-radio-option [value]="0">none</label>
+    <label ye-radio-option *ngFor="let item of list" [value]="item.id">{{item.name}}</label>
 </div>

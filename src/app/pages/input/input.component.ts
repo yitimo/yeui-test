@@ -18,11 +18,12 @@ export class InputComponent implements OnInit {
     {id: 5, name: '五毛'},
     {id: 6, name: '六毛'}
   ];
+  public testttt = 3;
   constructor() { }
 
   ngOnInit() {
     // setInterval(() => {
-    //   console.log(this.checkboxTest1, this.checkboxTest2);
+    //   console.log(this.testttt);
     // }, 1000);
   }
 
